@@ -1,5 +1,5 @@
-import { ToDoAccess } from './todosAccess'
-import { AttachmentUtils } from './attachmentUtils';
+import { ToDoAccess } from '../dataLayer/todosAccess'
+import { AttachmentUtils } from '../fileStorage/attachmentUtils';
 import {parseUserId} from "../auth/utils";
 import { TodoItem } from '../models/TodoItem'
 import { CreateTodoRequest } from '../requests/CreateTodoRequest'

@@ -118,12 +118,7 @@ functions:
           path: todos
           cors: true
           authorizer: Auth
-          documentation:
-            summary: "Create a todo item"
-            description: "Create a todo item"
-            requestModels:
-              "application/json": CreateTodoRequest
-          reqValidatorName: RequestBodyValidator
+          reqValidatorName: 'RequestBodyValidator'
     iamRoleStatementsName: ${self:provider.environment.PROJECT_NAME}-create-todo-role-${self:provider.stage}
     iamRoleStatements:
       - Effect: Allow
